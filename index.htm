@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171817">
+    <title>Pô Mô Đô Rô</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Screenshot-2026-07-22-165912.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="pomodoro-app" aria-labelledby="app-title">
+        <header class="app-header">
+            <img class="brand-mark" src="naruto_1181922.png" alt="Logo">
+            <div>
+                <h1 id="app-title">Pô Mô Đô Rô</h1>
+                <p class="eyebrow">Kiên trì</p>
+            </div>
+        </header>
+
+        <section class="timer-panel" aria-labelledby="session-title">
+            <p id="session-title" class="session-label">Focus session</p>
+            <div class="timer-ring" aria-label="Thời gian 25 phút">
+                <p id="timer" class="timer-value">25:00</p>
+            </div>
+            <p id="status" class="status-text">Sẵn sàng để tập trung</p>
+        </section>
+
+        <div class="controls" aria-label="Điều khiển bộ đếm giờ">
+            <button id="start-button" class="button button-primary" type="button">Bắt đầu</button>
+            <button id="reset-button" class="button button-secondary" type="button">Đặt lại</button>
+        </div>
+
+        <div class="mode-switcher" role="group" aria-label="Chọn phiên làm việc">
+            <button class="mode-button active" type="button" data-mode="focus">Focus<br><span>25 phút</span></button>
+            <button class="mode-button" type="button" data-mode="break">Break<br><span>5 phút</span></button>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
